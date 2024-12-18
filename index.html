@@ -62,10 +62,10 @@
       document.body.style.overflow = 'hidden';  // Prevent scrolling during animation
 
       // Step 1: Start with Blue color immediately
-      setTimeout(function() {
+      
         console.log('Setting background color to Blue');
         document.body.style.backgroundColor = '#00D3D2';  // Blue
-      }, 0);  // Start with blue immediately
+      
 
       // Step 2: Transition to Red after 1 second
       setTimeout(function() {
@@ -73,21 +73,26 @@
         document.body.style.backgroundColor = '#D53D22';  // Red
       }, 1000);  // Transition to red after 1 second
 
+
       // Step 3: Transition to Yellow after 2 seconds
       setTimeout(function() {
         console.log('Setting background color to Yellow');
         document.body.style.backgroundColor = '#FFE974';  // Yellow
-      }, 2000);  // Transition to yellow after 2 seconds
+      }, 1000);  // Transition to yellow after 2 seconds
 
+      console.log("hello");
+      setTimeout(function() { },2000);
+      console.log("hello2");
+      /*
       // Step 4: Hold Yellow for an additional 2 seconds
       setTimeout(function() {
         console.log('Holding Yellow for 2 seconds');},2000);
-        
+        */
         // Ensuring Yellow stays for 2 seconds before fading in content
         setTimeout(function() {
           console.log('Fading in content after yellow');
           document.body.style.opacity = '1';  // Fade the content back in after 2 seconds of yellow
-        }, 4000);  // Content fades in after yellow has stayed for 2 seconds
+        }, 2000);  // Content fades in after yellow has stayed for 2 seconds
       //}, 4000);  // Hold yellow for 2 seconds (4 seconds total from start of animation)
 
     } else {
