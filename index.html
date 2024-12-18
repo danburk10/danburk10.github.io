@@ -65,20 +65,20 @@
       
         console.log('Setting background color to Blue');
         document.body.style.backgroundColor = '#00D3D2';  // Blue
-      
-      setTimeout(function() { ; },2000);
+      await wait(2000); 
+      //setTimeout(function() { ; },2000);
 
         console.log('Setting background color to Red');
         document.body.style.backgroundColor = '#D53D22';  // Red
 
-
-      setTimeout(function() { ; },2000);
+      await wait(2000); 
+      //setTimeout(function() { ; },2000);
       
 
         console.log('Setting background color to Yellow');
         document.body.style.backgroundColor = '#FFE974';  // Yellow
-
-        setTimeout(function() { ; },2000);
+        await wait(2000); 
+        //setTimeout(function() { ; },2000);
       
         // Ensuring Yellow stays for 2 seconds before fading in content
         setTimeout(function() {
@@ -91,6 +91,10 @@
       console.log('Not the homepage, skipping animation.');
     }
   });
+
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
 </script><script>Static.COOKIE_BANNER_CAPABLE = true;</script>
 <!-- End of Squarespace Headers -->
     
